@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Your Dream Condo with Global Condo Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Styles to match Lunas.pro (adjust as needed) */
+        .bg-hero {
+            background-image: url('https://images.unsplash.com/photo-1600047928940-16815011c985?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbmRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'); /* Replace with your actual image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #647DEE 0%, #7F53AC 100%); /* Example gradient */
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #374151; /* Dark gray */
+            margin-bottom: 2rem;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .loan-option-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+        .loan-option-card h3 {
+            color: #647DEE;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #647DEE;
+            box-shadow: 0 0 0 0.2rem rgba(100, 125, 238, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "878fc4a9-e057-4640-86cb-06d0bcbd6183",
+        apiHost: "http://dev.codeit.ai:39100",
+        chatflowConfig: {
+            // topK: 2
+        },
+        theme: {
+            button: {
+                backgroundColor: "#3B82F6",
+                right: 20,
+                bottom: 20,
+                size: 57, // small | medium | large | number
+                dragAndDrop: true,
+                iconColor: "white",
+                customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi There 👋!',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16,
+            },
+            chatWindow: {
+                showTitle: true,
+                title: 'Condo AI Assistant',
+                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                showAgentMessages: true,
+                welcomeMessage: 'Hi there! How can I help?',
+                errorMessage: 'Sorry, something went wrong',
+                backgroundColor: "#ffffff",
+                height: 700,
+                width: 400,
+                fontSize: 16,
+                poweredByTextColor: "#303235",
+                botMessage: {
+                    backgroundColor: "#f7f8ff",
+                    textColor: "#303235",
+                    showAvatar: true,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
+                },
+                userMessage: {
+                    backgroundColor: "#3B81F6",
+                    textColor: "#ffffff",
+                    showAvatar: true,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#3B81F6',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+                    sendMessageSound: true,
+                    // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
+                    receiveMessageSound: true,
+                    // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true.
+                },
+                feedback: {
+                    color: '#303235',
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: '',
+                    company: '',
+                    companyLink: '',
+                }
+            }
+        }
+    })
+</script>
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-blue-500">Global Condo Marketplace</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-blue-500">Home</a>
+                <a href="/condos" class="hover:text-blue-500">Condo Listings</a>
+                <a href="/about" class="hover:text-blue-500">About Us</a>
+                <a href="/contact" class="hover:text-blue-500">Contact</a>
+                <a href="/lending" class="font-semibold text-blue-500">Lending</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="bg-gray-100 py-2 px-4">
+                <a href="/" class="block py-2 hover:text-blue-500">Home</a>
+                <a href="/condos" class="block py-2 hover:text-blue-500">Condo Listings</a>
+                <a href="/about" class="block py-2 hover:text-blue-500">About Us</a>
+                <a href="/contact" class="block py-2 hover:text-blue-500">Contact</a>
+                <a href="/lending" class="block py-2 font-semibold text-blue-500">Lending</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-hero py-24 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-700 opacity-60"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Your Path to Condo Ownership Starts Here</h1>
+            <p class="text-lg md:text-xl mb-8">Unlock the door to your dream condo with our streamlined and flexible lending solutions.</p>
+            <a href="#apply-now" class="btn-primary">Get Pre-Qualified</a>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">Why Choose Global Condo Marketplace Lending?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <i class="fas fa-percentage text-3xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Competitive Rates</h3>
+                    <p class="text-gray-600">Access some of the most competitive interest rates in the market to make your condo purchase affordable.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-handshake text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Personalized Guidance</h3>
+                    <p class="text-gray-600">Our expert lending team provides tailored advice and support throughout your financing journey.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt text-3xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Fast Approval Process</h3>
+                    <p class="text-gray-600">We understand the importance of time. Our streamlined process ensures quick and efficient loan approvals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">Explore Our Tailored Lending Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="loan-option-card">
+                    <h3 class="text-xl font-semibold text-blue-500 mb-4"><i class="fas fa-home mr-2"></i> First-Time Buyers</h3>
+                    <p class="text-gray-700 mb-4">Special programs designed to help first-time homebuyers achieve their dream of owning a condo.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Low down payment options</li>
+                        <li>Expert guidance</li>
+                    </ul>
+                </div>
+                <div class="loan-option-card">
+                    <h3 class="text-xl font-semibold text-indigo-500 mb-4"><i class="fas fa-briefcase mr-2"></i> Investment Loans</h3>
+                    <p class="text-gray-700 mb-4">Unlock the potential of real estate investment with our flexible loan options for condo investors.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Competitive investor rates</li>
+                        <li>Portfolio financing</li>
+                    </ul>
+                </div>
+                <div class="loan-option-card">
+                    <h3 class="text-xl font-semibold text-purple-500 mb-4"><i class="fas fa-sync-alt mr-2"></i> Refinancing</h3>
+                    <p class="text-gray-700 mb-4">Explore options to refinance your existing mortgage for better rates or terms on your condo.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Lower monthly payments</li>
+                        <li>Shorter loan terms</li>
+                    </ul>
+                </div>
+                <div class="loan-option-card">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4"><i class="fas fa-expand-arrows-alt mr-2"></i> Jumbo Loans</h3>
+                    <p class="text-gray-700 mb-4">Financing solutions for higher-value condos, providing the flexibility you need for luxury properties.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>High loan amounts</li>
+                        <li>Personalized service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply-now" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title text-blue-700">Ready to Find Your Financing Solution?</h2>
+            <p class="text-lg text-gray-700 mb-8">Fill out the form below to take the first step towards owning your dream condo.</p>
+            <div class="max-w-lg mx-auto">
+                <form class="bg-gray-100 rounded-lg shadow-md p-8">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number">
+                    </div>
+                    <div class="mb-6">
+                        <label for="loan-type" class="block text-gray-700 text-sm font-bold mb-2">Interested In</label>
+                        <select id="loan-type" class="form-control">
+                            <option value="">-- Select an Option --</option>
+                            <option value="first-time">First-Time Homebuyer Loan</option>
+                            <option value="investment">Investment Property Loan</option>
+                            <option value="refinance">Refinancing</option>
+                            <option value="jumbo">Jumbo Loan</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Submit Inquiry</button>
+                </form>
+            </div>
+            <p class="mt-6 text-gray-700">Or call us directly at <a href="tel:+1234567890" class="text-blue-500 hover:underline">(123) 456-7890</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Global Condo Marketplace. All rights reserved.</p>
+            <nav class="mt-4 space-x-4">
+                <a href="/privacy" class="hover:text-gray-300">Privacy Policy</a>
+                <a href="/terms" class="hover:text-gray-300">Terms of Service</a>
+            </nav>
+            <div class="mt-4">
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook fa-lg mr-2"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
